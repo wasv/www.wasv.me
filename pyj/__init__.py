@@ -33,7 +33,7 @@ class Page:
                                     site=site, content=content)
         outname = str(self.fpath.parent / self.fpath.stem) + '.html'
         with open(outname, 'w') as dst_file:
-            dst_file.write(page)
+            dst_file.write(page+'\n')
 
     def __repr__(self):
         return "<Page: %s>" % self.fpath

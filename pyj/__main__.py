@@ -5,9 +5,9 @@ import jinja2 as j2
 
 import pyj
 
+START_DIR = os.getcwd()
 SITE_DIR = argv[1]
 OUT_DIR = argv[2]
-ROOT_DIR = os.path.join(SITE_DIR, 'root')
 TEMPLATES_DIR = os.path.abspath(os.path.join(SITE_DIR, 'templates'))
 
 ENV = j2.Environment(
@@ -15,9 +15,9 @@ ENV = j2.Environment(
     autoescape=False
     )
 
-c = pyj.Collection(os.path.join(ROOT_DIR))
-print(c)
-os.mkdir(OUT_DIR)
-os.chdir(OUT_DIR)
-os.mkdir(SITE_DIR)
-c.render(ENV, parent=c, site=c)
+os.chdir(SITE_DIR)
+site = pyj.Collection('site')
+
+os.mkdir(os.path.join(START_DIR, OUT_DIR))
+os.chdir(os.path.join(START_DIR, OUT_DIR))
+site.render(ENV, parent=site, site=site)
