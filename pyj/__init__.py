@@ -1,26 +1,27 @@
+import jinja2 as j2
+import os.path
 import yaml
 from markdown import markdown
 
 class Page:
-    path = ""
-    fname = ""
+    fpath = ""
+    content = ""
     data = {}
 
     def __init__(self, fpath):
-        fpath = fpath.split("/")
-        self.path = path
-        self.fname = fname
-        with open(fname, 'r') as f:
+        self.fpath = fpath
+        with open(self.fpath, 'r') as f:
             text = f.read()
             parts = text.split('---')
             if len(parts) == 1:
-                self.data["content"] = text
+                self.content = markdown(text)
             else:
                 self.data = yaml.load(parts[0])
-                self.data["content"] = "---".join(parts[1:])
+                self.content = markdown("---".join(parts[1:]))
 
-    def render(self, env, parent, site):
-        template = env.get_template(data["template"])
-        text = template.render(self.data)
-        content = markdown(text)
-        return content
+    def render(self, env, parent=None, site=None):
+        content_template = j2.Template(self.content)
+        content = content_template.render(self.data, parent=parent, site=site)
+        page_template = env.get_template(self.data["template"])
+        page = page_template.render(self.data, parent=parent, site=site, content=content)
+        return page
