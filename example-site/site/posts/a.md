@@ -6,4 +6,4 @@ template: template.html
 ---
 
 ## Testing
-name {{ name }} age {{ age }} on {{ site.name }}
+name {{ name }} age {{ age }} at {{ parent }}

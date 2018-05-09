@@ -15,8 +15,8 @@ ENV = j2.Environment(
     autoescape=False
     )
 
-os.chdir(SITE_DIR)
-site = pyj.Collection('site')
+os.chdir(os.path.join(SITE_DIR, 'site'))
+site = pyj.Collection('.')
 
 os.mkdir(os.path.join(START_DIR, OUT_DIR))
 os.chdir(os.path.join(START_DIR, OUT_DIR))

@@ -6,4 +6,9 @@ template: template.html
 ---
 
 ## Testing
-name {{ name }} age {{ age }} on {{ site.name }}
+name {{ name }} age {{ age }}
+
+{% set posts = siblings['posts'].contents|dictsort %}
+{% for _, post in posts %}
+- [{{ post.data.name }}]({{ post.fpath }})
+{% endfor %}

@@ -1,5 +1,6 @@
 import os
 import pathlib
+from shutil import copyfile
 
 import jinja2 as j2
 import yaml
@@ -7,32 +8,50 @@ from markdown import markdown
 
 
 class Page:
-    fpath = ""
-    content = ""
-    data = {}
+    data = None
+    plain = False
 
     def __init__(self, fpath):
-        self.fpath = pathlib.Path(fpath)
+        if fpath.suffix != '.md':
+            self.plain = True
+            self.ipath = os.path.abspath(fpath)
+            self.opath = fpath
+            return
 
-        with open(self.fpath, 'r') as src_file:
+        with open(fpath, 'r') as src_file:
             text = src_file.read()
 
-        parts = text.split('---')
+        parts = text.split('\n\n---\n\n')
         if len(parts) == 1:
-            self.content = markdown(text)
+            self.content = text
+            self.fpath = fpath
         else:
             self.data = yaml.load(parts[0])
-            self.content = markdown("---".join(parts[1:]))
+            self.content = "\n\n---\n\n".join(parts[1:])
+            fpath = pathlib.Path(fpath)
+            self.fpath = str(fpath.parent / fpath.stem) + '.html'
 
     def render(self, env, parent=None, site=None):
+        if self.plain is True:
+            copyfile(self.ipath, self.opath)
+            return
+        if self.data is None:
+            with open(self.fpath, 'w') as dst_file:
+                dst_file.write(self.content+'\n')
+            return
+
         content_template = j2.Template(self.content)
-        content = content_template.render(self.data,
-                                          parent=parent, site=site)
+        content = content_template.render(self.data, parent=parent.fpath,
+                                          siblings=parent.contents,
+                                          site=site.contents)
+
         page_template = env.get_template(self.data["template"])
-        page = page_template.render(self.data, parent=parent,
-                                    site=site, content=content)
-        outname = str(self.fpath.parent / self.fpath.stem) + '.html'
-        with open(outname, 'w') as dst_file:
+        page = page_template.render(self.data, parent=parent.fpath,
+                                    siblings=parent.contents,
+                                    site=site.contents,
+                                    content=markdown(content))
+
+        with open(self.fpath, 'w') as dst_file:
             dst_file.write(page+'\n')
 
     def __repr__(self):
@@ -55,9 +74,12 @@ class Collection:
         self.contents = contents
 
     def render(self, env, parent=None, site=None):
-        os.mkdir(self.fpath)
+        try:
+            os.mkdir(self.fpath)
+        except FileExistsError:
+            pass
         for content in self.contents.values():
-            content.render(env, parent=self.contents, site=site)
+            content.render(env, parent=self, site=site)
 
     def __repr__(self):
         return "<Collection: %s>" % self.fpath
