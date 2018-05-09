@@ -10,7 +10,7 @@ SITE_DIR = argv[1]
 OUT_DIR = argv[2]
 TEMPLATES_DIR = os.path.abspath(os.path.join(SITE_DIR, 'templates'))
 
-ENV = j2.Environment(
+env = j2.Environment(
     loader=j2.FileSystemLoader(TEMPLATES_DIR),
     autoescape=False
     )
@@ -20,4 +20,4 @@ site = pyj.Collection('.')
 
 os.mkdir(os.path.join(START_DIR, OUT_DIR))
 os.chdir(os.path.join(START_DIR, OUT_DIR))
-site.render(ENV, parent=site, site=site)
+site.render(env, parent=site, site=site)
