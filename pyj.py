@@ -83,3 +83,24 @@ class Collection:
 
     def __repr__(self):
         return "<Collection: %s>" % self.fpath
+
+if __name__ == "__main__":
+    import os
+    from sys import argv
+
+    START_DIR = os.getcwd()
+    SITE_DIR = argv[1]
+    OUT_DIR = argv[2]
+    TEMPLATES_DIR = os.path.abspath(os.path.join(SITE_DIR, 'templates'))
+
+    env = j2.Environment(
+        loader=j2.FileSystemLoader(TEMPLATES_DIR),
+        autoescape=False
+        )
+
+    os.chdir(os.path.join(SITE_DIR, 'site'))
+    site = Collection('.')
+
+    os.mkdir(os.path.join(START_DIR, OUT_DIR))
+    os.chdir(os.path.join(START_DIR, OUT_DIR))
+    site.render(env, parent=site, site=site)
