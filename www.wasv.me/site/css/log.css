@@ -1,0 +1,19 @@
+.section {
+    margin: 1em 0 2em 0;
+}
+.section h2 {
+    border-radius: 8px 8px 0 0;
+    background-color: #DADADA;
+    border-bottom: 0.5pt solid black;
+    padding: 0 5px 0 5px;
+    margin-bottom: 5px;
+}
+.section span.date {
+    float: right;
+}
+.section img.primary {
+    max-width: 500px;
+    width: 50%;
+    margin: 0 auto;
+    display: block;
+}
