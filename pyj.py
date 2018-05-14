@@ -85,7 +85,6 @@ class Collection:
         return "<Collection: %s>" % self.fpath
 
 if __name__ == "__main__":
-    import os
     from sys import argv
 
     START_DIR = os.getcwd()
