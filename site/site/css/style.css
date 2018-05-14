@@ -111,25 +111,27 @@ li {
   display:block;
 }
 .project-grid-item {
-  background: #424242 none repeat scroll 0 0;
-  color: #E8E8E8;
   white-space: initial;
   display: inline-block;
   vertical-align: top;
   width: 250px;
-  height: 125px;
+  height: 300px;
   margin: 5px;
   padding: 0px 5px;
 }
-.project-link {
-   color: #DDD;
+.project-grid-item img {
+    text-align: center;
+    max-width: 225px;
+    height: 100px;
+ }
+.project-grid-item a {
    font-weight: bold;
    display: block;
    text-align: center;
  }
-.project-desc {
+.project-grid-item p {
   text-align: left;
 }
-.project-link:hover {
+.project-grid-item a:hover {
   text-decoration: underline;
 }
