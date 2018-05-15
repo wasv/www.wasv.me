@@ -15,7 +15,7 @@ class Page:
         if fpath.suffix != '.md':
             self.plain = True
             self.ipath = os.path.abspath(fpath)
-            self.opath = fpath
+            self.fpath = fpath
             return
 
         with open(fpath, 'r') as src_file:
@@ -32,8 +32,9 @@ class Page:
             self.fpath = str(fpath.parent / fpath.stem) + '.html'
 
     def render(self, env, parent=None, site=None):
+        print(self.fpath)
         if self.plain is True:
-            copyfile(self.ipath, self.opath)
+            copyfile(self.ipath, self.fpath)
             return
         if self.data is None:
             with open(self.fpath, 'w') as dst_file:
@@ -49,7 +50,8 @@ class Page:
         page = page_template.render(self.data, parent=parent.fpath,
                                     siblings=parent.contents,
                                     site=site.contents,
-                                    content=markdown(content))
+                                    content=markdown(content,
+                                                     extensions=['markdown.extensions.attr_list']))
 
         with open(self.fpath, 'w') as dst_file:
             dst_file.write(page+'\n')
@@ -89,7 +91,7 @@ if __name__ == "__main__":
 
     START_DIR = os.getcwd()
     SITE_DIR = argv[1]
-    OUT_DIR = argv[2]
+    OUT_DIR = 'build' if len(argv) <= 3 else argv[2]
     TEMPLATES_DIR = os.path.abspath(os.path.join(SITE_DIR, 'templates'))
 
     env = j2.Environment(

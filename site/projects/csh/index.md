@@ -1,30 +1,9 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>RIT CSH | [ WASV ]</title>
-  <meta name="description" content="A collection of students interested in creating projects and learning new things.">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="../../css/reset.css" media="screen" title="no title" charset="utf-8">
-  <link rel="stylesheet" href="../style.css" media="screen" title="no title" charset="utf-8">
-  <link rel="icon" type="image/png" href="/favicon.ico">
-</head>
-<body>
-<div id="container">
-  <div id="header">
-    <div id="header-info">
-      <h1 id="title">William A Stevens V</h1>
-      <h2 id="tagline">Maker, Coder, Dreamer</h2>
-      <ul id="morals">
-        <li> I make things because I enjoy learning. </li>
-        <li> I ask questions because I am curious. </li>
-        <li> I solve problems because I am human. </li>
-      </ul>
-    </div>
-  </div>
-  
+title: CSH
+template: template.html
+siteroot: .
+
+---
+
 <div class="card">
 <h1>RIT Computer Science House</h1>
 <p>CSH is a collection of students interested in creating projects and learning new things. The open and accepting community along with the highly available resources here create a learning environment that is unmatched anywhere else. I have begun working on various personal projects here.</p>
@@ -59,17 +38,3 @@
     <h2>Source Code:</h2>
     <a target="_blank" href="https://github.com/wastevensv/CSH_Projects"><i class="fa fa-github"></i>wastevensv/CSH_Projects</a><br/>
 </div>
-
-</div>
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-66870519-1', 'auto');
-  ga('send', 'pageview');
-
-</script>
-</body>
-</html>
