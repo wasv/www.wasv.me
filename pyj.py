@@ -91,7 +91,7 @@ if __name__ == "__main__":
 
     START_DIR = os.getcwd()
     SITE_DIR = argv[1]
-    OUT_DIR = 'build' if len(argv) <= 3 else argv[2]
+    OUT_DIR = 'build' if len(argv) < 3 else argv[2]
     TEMPLATES_DIR = os.path.abspath(os.path.join(SITE_DIR, 'templates'))
 
     env = j2.Environment(
