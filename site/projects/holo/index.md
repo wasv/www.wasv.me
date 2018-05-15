@@ -1,6 +1,6 @@
 title: Holo
 template: template.html
-siteroot: .
+siteroot: ../..
 
 ---
 

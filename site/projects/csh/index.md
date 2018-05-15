@@ -1,6 +1,6 @@
 title: CSH
 template: template.html
-siteroot: .
+siteroot: ../..
 
 ---
 
