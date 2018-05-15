@@ -6,20 +6,6 @@ siteroot: .
 
 <div id="project-grid">
 
-{% set projects = siblings['projects'].contents|selectattr('contents')|dictsort %}
-{% for _, projectdir in projects %}
-{% set project = projectdir.contents['index.md'] %}
-  <div class="project-grid-item">
-    <img alt="{{project.data.title}}" src="{{siteroot}}{{image}}"/><br>
-    <a href="{{project.fpath}}">{{project.data.title}}</a><br>
-    <p>
-        Projecting a 'hologram' using a computer monitor and
-        a reflective prism made of lexan sheets, including software
-        to render an object on the prism.
-    </p>
-  </div>
-{% endfor %}
-
   <div class="project-grid-item">
     <img alt="Example 'Hologram'" src="{{siteroot}}/img/holo.png"/><br>
     <a href="holo/index.html">'Holographic' Projection</a><br>
