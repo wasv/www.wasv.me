@@ -1,11 +1,16 @@
-image: kennethreitz/pipenv
+image: python:alpine
+
+before_script:
+  - python -V                                   # Print out python version for debugging
+  - pip install pipenv
+  - pipenv install --deploy --system
 
 pages:
   stage: deploy
   script:
-  - python -m pyj .
+  - python3 -m pyj . public
   artifacts:
     paths:
-    - build/
+    - public/
   only:
     - master
