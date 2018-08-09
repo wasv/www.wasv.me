@@ -1,0 +1,11 @@
+image: kennethreitz/pipenv
+
+pages:
+  stage: deploy
+  script:
+  - python -m pyj .
+  artifacts:
+    paths:
+    - build/
+  only:
+    - master

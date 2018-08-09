@@ -1,4 +1,8 @@
 title: Holo
+description:
+        Projecting a 'hologram' using a computer monitor and
+        a reflective prism made of lexan sheets, including software
+        to render an object on the prism.
 template: template.html
 siteroot: ../..
 

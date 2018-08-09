@@ -1,5 +1,7 @@
 title: RIT Launch Initiative
-description: A team of college students designing a 12 foot rocket and launching it 10,000 feet into the air.
+description:
+        A team of college students working to launch a rocket 10,000 feet.<br>
+        I was a member of the Avionics team and worked on the communication system.
 template: template.html
 siteroot: ../..
 image: /img/launch.png
