@@ -9,8 +9,9 @@ siteroot: .
 {% for _, projdir in projects %}
 {% set project = projdir.contents['index.md'] %}
 <div class="project-grid-item">
-    <img src="{{siteroot}}/img/{{projdir.fpath}}.png"/><br>
-    <a href="{{ project.fpath }}">{{ project.data.title }}</a>
+    <a href="{{ project.fpath }}">
+    <img src="{{siteroot}}{{project.data.image}}"/><br>
+    {{ project.data.title }}</a>
     <p>
         {{project.data.description}}
     </p>

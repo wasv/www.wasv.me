@@ -6,10 +6,12 @@ image: /img/w832.png
 
 ---
 
-# [w832](https://gitlab.com/wasv/w832){target="\_blank"}
+# w832
 Learning how emulators and assemblers work with a fictional architecture.
 
-![Sreenshot of code for w832](w832_code.png){style="width:80%;display:block;"}
+![Sreenshot of code for w832](w832_code.png){class="primary" style="width:80%;display:block;"}
+
+<i class="fa fa-gitlab"></i> Code: <a target="_blank" href="https://gitlab.com/wasv/w832">wasv/w832</a>
 
 I spent some time this past summer and spring working on learning the basics of designing an instruction set.
 I didn't formally learn these topics for a year or two in my college.

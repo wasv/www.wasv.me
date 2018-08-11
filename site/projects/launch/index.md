@@ -4,7 +4,7 @@ description:
         I was a member of the Avionics team and worked on the communication system.
 template: template.html
 siteroot: ../..
-image: /img/launch.png
+image: /img/launch.jpg
 
 ---
 
@@ -12,7 +12,7 @@ image: /img/launch.png
 As a member of the RIT Launch Initiative, I have been working to develop the communications software for retrieving and analyzing data from a 12 foot rocket that will be launched 10,000 feet into the air.
 
 <div style="text-align:center;">
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/Ku64EFfmUJA" frameborder="0" allowfullscreen></iframe>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/7le3kACBxFc" frameborder="0" allowfullscreen></iframe>
 </div>
 
 ## ZCM Transport Layer for Embedded Character Devices

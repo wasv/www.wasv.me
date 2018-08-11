@@ -2,6 +2,7 @@ title: RIT Computer Science House
 description: A collection of students interested in creating projects and learning new things.
 template: template.html
 siteroot: ../..
+image: /img/csh.png
 
 ---
 

@@ -5,11 +5,12 @@ description:
         to render an object on the prism.
 template: template.html
 siteroot: ../..
+image: /img/holo.jpg
 
 ---
 
 # 'Holographic' Projection
-![Hologram](holo_projection.jpg){style="max-width:200pt;display:block;"}
+![Hologram](holo_projection.jpg){class="primary" style="max-width:200pt;display:block;"}
 
 I've seen a lot of tutorials online about how to make a phone sized reflective prism for projecting 'holograms' (not technically a [hologram](http://www.merriam-webster.com/dictionary/hologram){target="_blank"}, but creates the illusion of one). However, they were too small to be very interesting, and I couldn't find any software to render a object properly. As a result, I created a 4-sided reflective prism from 8"x10" Lexan sheets, and wrote software to render an object in the proper perspectives.
 

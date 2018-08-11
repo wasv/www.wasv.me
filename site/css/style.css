@@ -5,6 +5,7 @@ body {
 }
 .center {
     text-align:center;
+    margin: 0 auto;
 }
 .line {
     display: inline-block;
@@ -68,6 +69,13 @@ body {
 
 #content {
     margin-left: 21%;
+}
+
+img.primary {
+    max-width: 500px;
+    width: 50%;
+    margin: 0 auto;
+    display: block;
 }
 
 li {
