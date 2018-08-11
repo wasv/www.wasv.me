@@ -7,9 +7,8 @@ template: template.html
 <h1>Reading List</h1>
 <h2>My Other Sites</h2>
 <ul>
-  <li><a target="_blank" href="http://holo.wasv.me/">holo.wasv.me</a> A domain for hosting my work with using reflective prisms to make 'holograms'.</li>
-  <li><a target="_blank" href="http://good.wasv.me/">good.wasv.me</a> and <a target="_blank" href="http://okay.wasv.me">okay.wasv.me</a> Two sites I made to help with stress relief.</li>
-  <li><a target="_blank" href="http://towel.wasv.me/">towel.wasv.me</a> A quote generator based on the entire text of the first 3 Hitchiker's Guide to the Galaxy Books.</li>
+  <li><a target="_blank" href="http://okay.wasv.me/">okay.wasv.me</a> A site I made to help with stress relief.</li>
+  <li><a target="_blank" href="http://good.wasv.me/">good.wasv.me</a> A site my friend and I made to help show positive emotions.</li>
 </ul>
 <h2>Useful Resources</h2>
 <h3>z80</h3>
