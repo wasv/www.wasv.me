@@ -16,8 +16,3 @@ pylint = "*"
 "jinja2" = "*"
 pyyaml = "*"
 markdown = "*"
-
-
-[requires]
-
-python_version = "3.6"
