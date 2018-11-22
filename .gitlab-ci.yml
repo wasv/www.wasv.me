@@ -3,7 +3,7 @@ image: python:alpine
 before_script:
   - python -V                                   # Print out python version for debugging
   - pip install pipenv
-  - pipenv install --deploy
+  - pipenv install
 
 pages:
   stage: deploy
