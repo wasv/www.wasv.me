@@ -4,8 +4,6 @@ description:
         a reflective prism made of lexan sheets, including software
         to render an object on the prism.
 template: template.html
-siteroot: ../..
-image: /img/holo.jpg
 
 ---
 
@@ -25,7 +23,6 @@ I've seen a lot of tutorials online about how to make a phone sized reflective p
 * Demos potential for interactive game-play on reflective prism.
 * Both players must cooperate to aim from different perspectives.
 * <a target="_blank" href="https://github.com/wastevensv/HoloUpShooter"><i class="fa fa-github"></i>wastevensv/HoloUpShooter</a>
-* <a target="_blank" href="http://holo.wasv.me/UpShooter/"><i class="fa fa-link"></i>Web Based Build</a>
 
 ## Holographic Graphing
 ![Holo Graphing](holo_graphing.png){style="width:100%;display:block;"}
@@ -41,5 +38,3 @@ I've seen a lot of tutorials online about how to make a phone sized reflective p
 * Normalizes the size of an object to properly fit on the screen.
 * Adjustable distance and rotation.
 * <a target="_blank" href="https://github.com/wastevensv/Holo"><i class="fa fa-github"></i>wastevensv/Holo</a>
-* <a target="_blank" href="http://holo.wasv.me/Demo/"><i class="fa fa-link"></i>Unity Web Based Demo</a>
-* <a target="_blank" href="http://holo.wasv.me/WebGL/square/"><i class="fa fa-link"></i>WebGL Based Demo</a>

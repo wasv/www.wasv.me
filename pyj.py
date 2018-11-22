@@ -42,13 +42,11 @@ class Page:
             return
 
         content_template = j2.Template(self.content)
-        content = content_template.render(self.data, parent=parent.fpath,
-                                          siblings=parent.contents,
+        content = content_template.render(self.data, parent=parent,
                                           site=site.contents)
 
         page_template = env.get_template(self.data["template"])
-        page = page_template.render(self.data, parent=parent.fpath,
-                                    siblings=parent.contents,
+        page = page_template.render(self.data, parent=parent,
                                     site=site.contents,
                                     content=markdown(content,
                                                      extensions=['markdown.extensions.attr_list']))
@@ -61,18 +59,25 @@ class Page:
 
 
 class Collection:
+    data = None
     fpath = ""
     contents = {}
 
     def __init__(self, fpath):
         self.fpath = pathlib.Path(fpath)
 
+
         contents = {}
         for entry in self.fpath.iterdir():
             if entry.is_dir():
                 contents[str(entry.name)] = Collection(entry)
             elif entry.is_file():
-                contents[str(entry.name)] = Page(entry)
+                if entry.name == 'metadata.yml':
+                    with open(entry.as_posix(), 'r') as meta_file:
+                        self.data = yaml.load(meta_file.read())
+                else:
+                    contents[str(entry.name)] = Page(entry)
+
         self.contents = contents
 
     def render(self, env, parent=None, site=None):
@@ -85,6 +90,7 @@ class Collection:
 
     def __repr__(self):
         return "<Collection: %s>" % self.fpath
+
 
 if __name__ == "__main__":
     from sys import argv

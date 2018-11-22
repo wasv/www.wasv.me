@@ -1,8 +1,6 @@
 title: w832
 description: Learning how emulators and assemblers work with a fictional architecture.
 template: template.html
-siteroot: ../..
-image: /img/w832.png
 
 ---
 
