@@ -1,8 +1,6 @@
 title: Playing with LEGOs and Working with OpenCV
 description: Detecting and cropping LEGO backplanes using OpenCV.
 template: template.html
-siteroot: ../..
-image: /img/lego-warp.png
 
 ---
 
