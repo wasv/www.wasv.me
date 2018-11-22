@@ -3,8 +3,7 @@ image: python:alpine
 before_script:
   - python -V                                   # Print out python version for debugging
   - pip install pipenv
-  - pipenv lock --clear
-  - pipenv install
+  - pipenv install --system --skip-lock
 
 pages:
   stage: deploy
