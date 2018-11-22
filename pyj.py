@@ -14,11 +14,11 @@ class Page:
     def __init__(self, fpath):
         if fpath.suffix != '.md':
             self.plain = True
-            self.ipath = os.path.abspath(fpath)
-            self.fpath = fpath
+            self.ipath = os.path.abspath(fpath.as_posix())
+            self.fpath = fpath.as_posix()
             return
 
-        with open(fpath, 'r') as src_file:
+        with open(fpath.as_posix(), 'r') as src_file:
             text = src_file.read()
 
         parts = text.split('\n\n---\n\n')
@@ -77,7 +77,7 @@ class Collection:
 
     def render(self, env, parent=None, site=None):
         try:
-            os.mkdir(self.fpath)
+            os.mkdir(self.fpath.as_posix())
         except FileExistsError:
             pass
         for content in self.contents.values():
