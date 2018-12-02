@@ -71,7 +71,7 @@ h4, h5, h6 {
     font-weight: bold;
 }
 
-b {
+strong, b {
     font-weight: bold;
 }
 
