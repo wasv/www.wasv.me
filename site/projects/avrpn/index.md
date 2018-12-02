@@ -1,7 +1,6 @@
 title: avRPN
 description: Attempt at creating a reverse polish notation calculator from an Arduino.
 template: template.html
-siteroot: ../..
 
 ---
 
