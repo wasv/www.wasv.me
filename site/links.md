@@ -17,6 +17,12 @@ template: template.html
   <li><a target="_blank" href="http://www.autometer.de/unix4fun/z80pack/">z80pack</a> A z80 emulator that I used for playing with z80 assembly.</li>
   <li><a target="_blank" href="https://en.wikipedia.org/wiki/Sharp_PC-E220">Sharp PC-E220</a> The z80 pocket computer I really, really want.</li>
 </ul>
+<h3>TI-83</h3>
+<ul>
+  <li><a target="_blank" href="http://wikiti.brandonw.net/index.php?title=WikiTI_Home">WikiTI</a> Extremely useful reference for writing TI-83+ firmware or apps.</li>
+  <li><a target="_blank" href="https://github.com/KnightOS/">KnightOS</a> Custom firmware for the TI-8x. </li>
+  <li><a target="_blank" href="http://lpg.ticalc.org/prj_tilp/">TiLP</a> Linking software for copying files to/from TI calculators. </li>
+</ul>
 <h3>OpenGL</h3>
 <ul>
   <li><a target="_blank" href="http://docs.gl/">docs.gl</a> Useful reference for OpenGL functions and compatibility.</li>
