@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>[WASV] | avRPN</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../../css/reset.css">
+    <link rel="stylesheet" href="../../css/style.css">
+  </head>
+  <body>
+    <div id="sidebar">
+      <img id="profile" src="../../img/wasv.jpg" />
+      <div id="name" class="center">William A Stevens V</div>
+      <div id="uname" class="center">(wasv)</div>
+      <ul id="what-i-do" class="center">
+        <li> I build things for fun. </li>
+        <li> I ask questions to learn. </li>
+        <li> I solve problems to live. </li>
+      </ul>
+      <div id="social">
+        <a target="_blank" title="E-Mail" href="mailto:contact@wastevensv.com"><i class="fa fa-envelope-square fa-2x" aria-hidden="true"></i></a>
+        <a target="_blank" title="GitHub" href="https://github.com/wasv"><i class="fa fa-github-square fa-2x" aria-hidden="true"></i></a>
+        <a target="_blank" title="GitLab" href="https://gitlab.com/wasv"><i class="fa fa-gitlab fa-2x" aria-hidden="true"></i></a>
+        <a target="_blank" title="LinkedIn" href="https://www.linkedin.com/in/wastevensv"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a>
+      </div>
+    </div>
+    <div id="header">
+      <span id="nav">
+        <span class="line">
+          <a href="../../index.html">Projects</a>
+        </span>
+        <span class="line">
+          <a href="../../links.html">Reading List</a>
+          <a href="../../resume.pdf" target="_blank">Resume</a>
+        </span>
+      </span>
+    </div>
+    <div id="content">
+        <h1>AVR RPN Calculator</h1>
+<p>An AVR <a href="https://en.wikipedia.org/wiki/Reverse_Polish_notation" target="_bank">RPN</a> Calculator</p>
+<p><img alt="My Updated Prototype" class="primary" src="prototype-2.png" style="width:80%;display:block;" /></p>
+<p><i class="fa fa-gitlab"></i> Code: <a target="_blank" href="https://gitlab.com/wasv/avr-rpn-calc">wasv/avr-rpn-calc</a></p>
+<h2>Updates:</h2>
+<h3>November 2018</h3>
+<p>This project has been on hold for a while. However, I recently reused the MCP23017 in another project to try and make a 64 button matrix keypad. While working on that project, I ran into an issue similar to the one that stopped this project. It turns out that the IO expander resets when every input pin on a port is pulled low. This does not occur when all but one pin is pulled low. This may be due to excessive current draw through the part, or some other power issue.</p>
+<h3>January 20th, 2016</h3>
+<p>No functional updates this time, just some more documentation as I prepare to return to college. The basic schematic below should (hopefully) be enough for me to reassemble this project after getting back to college. In addition, I have an updated photo of the hardware layout and a brief 'cheatsheet' for the MCP23017 IO expander I've been using. I got 4 of them for $1.20 each at <a href="https://www.digikey.com/product-detail/en/MCP23017-E%2FSP/MCP23017-E%2FSP-ND/894272" target="_blank">Digikey</a></p>
+<p><img alt="My current wiring of the project" class="primary" src="wiring.png" style="width:80%;display:block;" /></p>
+<p><img alt="Notes on the MCP23017 IO Expander" class="primary" src="io-exp-notes.png" style="width:80%;display:block;" /></p>
+<h3>January 18th, 2016</h3>
+<p>I've worked out the remaining bugs in keypad reading code. It turns out that the prebuilt keypad I was using was causing an issue. After I rebuilt the keypad circuit with 16 individual buttons, each with a pullup resistor, I was able to work out the remaining software bugs. I went through a few different iterations, gradually adding more debugging code. One iteration involved reading each register on the IO expander hoping to figure out what the state of the device was. It was only after I simplified the code, essentially starting over, that I could figure out how to read the state properly.</p>
+<p>The current code displays the hex value read from IO expander and the keycode it matches. I'm still working on a way to get interrupts to work, but I should be able to get my final code to work without them. The code in the <a href="https://gitlab.com/wasv/avr-rpn-calc/tree/master/keys" target="_blank">keys folder</a>.</p>
+<h3>January 14th, 2016</h3>
+<p>The parts came in for the new keypad design. I assembled a circuit with the IO expander and LCD connected to the Arduino through the same i2c bus. Communication appears to be working, but the IO expander isn't picking up any button presses. I spent most of last night and this morning troubleshooting it. See the <a href="https://gitlab.com/wasv/avr-rpn-calc/tree/dev" target="_blank">dev branch</a> on GitHub (now GitLab) for my current work. The keys folder will currently show the received state of the IO expander GPIO. I may need to work on how I wired the buttons.</p>
+<h3>January 12th, 2016</h3>
+<p>I now have an implementation of the language in the project repository. It also includes a type-independent implementation of a stack in C. Storing values are not yet implemented.</p>
+<p>I'm also waiting on parts for a redesigned keypad. The new design will use an i2c IO expander rather than trying to read a keyboard matrix.</p>
+<h3>January 10th, 2016</h3>
+<p>So far, I have a few tests in the <a href="https://gitlab.com/wasv/avr-rpn-calc/" target="_blank">project repository</a> to verify that the LCD can display characters, and that the keypad can detect keypresses.</p>
+<p>The LCD works, and the keypad can detect if a key is pressed. However, I have run into some trouble with scanning the keys. The keypad will occasionally send the wrong keypress to screen (typically one directly above or below the correct key). I believe using some debouncing could solve the problem, or possibly changing the scanning function to only detect a change in keypress.</p>
+<p>This is still a work in progress, but I've learned a lot in the process and I look forward to seeing where this goes.
+<hr></p>
+<h2>Original Writeup</h2>
+<p><em>Does not reflect the current state of the project.</em></p>
+<h3>Intro</h3>
+<p>During the winter break after my first semester of college, I participated in <a href="http://csh.rit.edu/" target="_blank">CSH's</a> 24 hour remote hackathon. This was a great opportunity to develop a project over the course of 24 hours while working with a great group of people across the country.</p>
+<p>For my project I worked on an AVR based calculator. My project was a bit overly ambitious for the 24 hour time period. However, I worked out a lot of the initial hardware and some of the basic software. I plan to make progress on this project over the remainder of my vacation.</p>
+<h3>Software</h3>
+<p><img alt="My initial design of the project" class="primary" src="notes.png" style="width:80%;display:block;" /></p>
+<p>The calculator runs on an ATmega328 in an Arduino board. However, the software is written using avr-gcc, without the Arduino IDE. I found a handy way to program the Arduino without the IDE. After some research I modified the Makefile provided in the book ~Make: AVR Programming~ to load code onto the Arduino from the command line (see the <a href="https://gitlab.com/wasv/avr-rpn-calc/blob/master/Makefile" target="_blank">Makefile</a>)</p>
+<p>The interpreter for the calculator is still a work in progress. I plan to get the basic system finalized before designing a language. The design is based on Reverse Polish Notation (a concept I have worked with in a previous project). In addition to simply displaying a result, the design includes a plan for variables that can be set, added to, and retrieved.</p>
+<h3>Hardware</h3>
+<p><img alt="The first prototype of the calculator" class="primary" src="prototype.png" style="width:80%;display:block;" /></p>
+<p>The hardware primarily consists of an LCD, a 15 button key matrix, and the Arduino.</p>
+<p>The LCD communicates via a TWI (aka i2c) bus. This is accomplished using a minimal library provided by the ~Make: AVR Programming~ tutorial code.</p>
+<p>The 15 buttons are wired in a 3x5 <a href="https://en.wikipedia.org/wiki/Keyboard_matrix_circuit" target="_blank">matrix</a> (similar to a computer keyboard). The Arduino scans one row at a time, and checks if any keys in that row are pressed, then advances to the next. This reduces the number of pins from 15 to 8 at the expense of slightly more code.</p>
+<p>In addition to the key matrix, there is also an 'alt' key. This allows each key to have a primary function and an alternate function. In this case, it allows access to the variables functionality described in the software section.</p>
+<hr>
+
+<p>The book <a href="http://shop.oreilly.com/product/0636920028161.do" target="_blank"><em>Make: AVR Programming</em></a> has been a huge help in learning how to write C for the AVRs. It is a great next step after outgrowing the Arduino IDE. With a little modification, it can unlock a lot more power out of a small board. I highly recommend it.</p>
+    </div>
+  </body>
+</html>
+<!-- 
+    But if I were to say, my fellow citizens, that we shall send to
+    the moon, 240,000 miles away from the control station in Houston,
+    a giant rocket more than 300 feet tall, the length of this
+    football field, made of new metal alloys, some of which have not
+    yet been invented, capable of standing heat and stresses several
+    times more than have ever been experienced, fitted together with a
+    precision better than the finest watch, carrying all the equipment
+    needed for propulsion, guidance, control, communications, food and
+    survival, on an untried mission, to an unknown celestial body, and
+    then return it safely to earth, re-entering the atmosphere at
+    speeds of over 25,000 miles per hour, causing heat about half that
+    of the temperature of the sun - almost as hot as it is here today
+    - and do all this, and do it right, and do it first before this
+    decade is out - then we must be bold.
+-->

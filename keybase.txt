@@ -1,0 +1,137 @@
+==================================================================
+https://keybase.io/wasv
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://www.wasv.me
+  * I am wasv (https://keybase.io/wasv) on keybase.
+  * I have a public key with fingerprint E273 F4CE 5F2F 817A C717  99F2 3465 01FA B7B4 DB6B
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "0120c3a9e29c2668490f73c35984024bf239cb6aa4ce225eade85553a8f3032273a10a",
+            "fingerprint": "e273f4ce5f2f817ac71799f2346501fab7b4db6b",
+            "host": "keybase.io",
+            "key_id": "346501fab7b4db6b",
+            "kid": "0101cb3909cb013f9253d7d8bd260391d3874624dd8fd889addafd10fcff359d23500a",
+            "uid": "49f94204084a1135b2e61c9dd0267c19",
+            "username": "wasv"
+        },
+        "revoke": {
+            "sig_ids": [
+                "273ea878b9f618bb654f89cb5f5453cb5b85f3eed798357343480d75d5c4b66f0f"
+            ]
+        },
+        "service": {
+            "hostname": "www.wasv.me",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1490745598,
+    "expire_in": 157680000,
+    "prev": "38a940a6c4db79703bc9e70e98a2eb2dc6a3c02a074cefcb506f465d313e9e6f",
+    "seqno": 14,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.66
+Comment: https://keybase.io/crypto
+
+yMOsAnicbVJtUFVFGL4YaGAMKpMhSjgnc8rwzp6z52uxkcRQs2syMqViinvO7sIR
+vJfuvXBVomZuEkFIU5aU5RimDE5+4KCpNZEII6H0ASVhpoCIophoOBrJaHuY/Nf+
+2dnd532e532fbYx8yBERItOQfw4fPJsdcqr+ep5j2e9/3ysQDA9ZLyQWCNl0ZKM5
+hPr8GdkWERIFIErAhBhRCZmSquoyAkyDJlSQLgNJNpgEkWmoGMsmlSSFYkJ1RVEg
+1hkEUJI0iEWAhQSBWe5M6s31Wm4/p6X8gfEShUlMFzVsaqKGECeTVQWIDBuaIRND
+NXhhlsdnV3BzBvZRp+Xhd/yQMWLvf/APfAPRNCAC3B0QIUOSAolGdINIKoBIJFDX
+ZFWSCdEZ0XWECcGMiICZjPHmiAQVMOI7b4RORgzJEpCBLmNRhIohUVU0ESFAUjVT
+RDbQR71uvJZydAD78oXCBMFL8z3Z1J6pz8rkhn1C4gqBd06xrukGYqqoG4aqyEzn
+LhWmyArku6ErDFJKNKRDRYMylHVANIUopmyoKgNMWMm5uVq+ZY6Q2xN6oBwIOG11
+Jz8lCLlej99jenL4Q5bfn5toe/Kvzx0BUiPjP4oMw3ITng4vyKden+VxC4kiR5p+
+y+YUeeSarPDAEwS6Ltfy0gzLRiiaqgO+bBmab2ehYyQDrJo8CQ1pABomohqgSMcS
+NSRiqhiaQMKczaSMNwpUxuMjUIQUUZUJdlOvuT22JPeJMzknn5sb+/O8VCg8Xv9q
+qCMkwjE6bJT9bR0R4eMefObLyVH3Zo/KCgbuHJqSGjuhZKy4AS3LjQ0t6P9wids7
+dcHXfSUTb1091YqdXTcjG+KqV9e88oeuN5RM/SQstXGgYlzo8qJ5Dx/IamalVd+P
+vuJs6L4bM2XDc00795YdH8/eiUON8c/216948sb9u0nRTzyeNfRx35h9B2FHA1k2
+YcWeS5N7WyqGDk/eYv72dMUzeSfk2Km3L0SnXS/NvHr0vaT9DvGcu3hv9eDut9Zt
+ebelp6Dts9S6sM1pab1XIr784pfB5gVnXfuq3BfHClGDZS+ddCXP7OgLHlmd2V+z
+S4yLu1a+r7ry24jnf9xcNRO3uIbC08a3LXgz7VhHSN+JHXK8MyJp6Ue3Zk6qG1vZ
+u2japPimr0aV33Y84g3E+l8437zt5cIzla8PeHeUnmuuuFy3+Mr99qVhaz641bkc
+zCgYurOqfOKNQ/sTa2JZ+uZ7jybAztr0jZ2e6T9kfyouDJa9WB6z/VfX/KByLCjt
+gVFPtc6eNWf8pcpVRa7gmOjP+3vm/lVcMyP6gj/HU7vpQEp26C7hjcjWRbt3Lm2L
+2fr2HHX+z9sb0r8L/ynqpjM8OLcopTf8/Nn2a4Gjhy6KNcXD8QPv1znnp+5e+U17
+0nAFfiwn/lhb6ekz3XuK1qrD8/qqpqHBq9q65CWxp3uu93Rt9SVs/PPkMLQON6bW
+BgZaiqtdltI0vSKla9amI9sca1wTFy6e3P0vK27fWQ==
+=roCO
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/wasv
+
+==================================================================
+
+==================================================================
+https://keybase.io/wasv
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://www.wasv.me
+  * I am wasv (https://keybase.io/wasv) on keybase.
+  * I have a public key ASDWQx1Ont_vakkvU1wqi8-QZiVvXBxNHy8MLm7kh1XkDgo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120c3a9e29c2668490f73c35984024bf239cb6aa4ce225eade85553a8f3032273a10a",
+      "host": "keybase.io",
+      "kid": "0120d6431d4e9edfef6a492f535c2a8bcf9066256f5c1c4d1f2f0c2e6ee48755e40e0a",
+      "uid": "49f94204084a1135b2e61c9dd0267c19",
+      "username": "wasv"
+    },
+    "merkle_root": {
+      "ctime": 1518328873,
+      "hash": "381004e60ea04fb6971333ef27d26eadb90fc86be63abb988285d2659c057c9e88bcd5812fb6f6d043ebde69e5885f302f9600430e7e6f5e3c36962f605b06a5",
+      "hash_meta": "18b7037eae5e7aa939bbaa88c8047a26827c7c2ee34ac6a7c1001f8ed65a6724",
+      "seqno": 2064887
+    },
+    "service": {
+      "hostname": "www.wasv.me",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "1.0.41"
+  },
+  "ctime": 1518328886,
+  "expire_in": 504576000,
+  "prev": "0354c149d379c32dac7115a8f3a8f0ae0261ba5eaedeadc9aca47c3371781be2",
+  "seqno": 61,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEg1kMdTp7f72pJL1NcKovPkGYlb1wcTR8vDC5u5IdV5A4Kp3BheWxvYWTFA0B7ImJvZHkiOnsia2V5Ijp7ImVsZGVzdF9raWQiOiIwMTIwYzNhOWUyOWMyNjY4NDkwZjczYzM1OTg0MDI0YmYyMzljYjZhYTRjZTIyNWVhZGU4NTU1M2E4ZjMwMzIyNzNhMTBhIiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwZDY0MzFkNGU5ZWRmZWY2YTQ5MmY1MzVjMmE4YmNmOTA2NjI1NmY1YzFjNGQxZjJmMGMyZTZlZTQ4NzU1ZTQwZTBhIiwidWlkIjoiNDlmOTQyMDQwODRhMTEzNWIyZTYxYzlkZDAyNjdjMTkiLCJ1c2VybmFtZSI6Indhc3YifSwibWVya2xlX3Jvb3QiOnsiY3RpbWUiOjE1MTgzMjg4NzMsImhhc2giOiIzODEwMDRlNjBlYTA0ZmI2OTcxMzMzZWYyN2QyNmVhZGI5MGZjODZiZTYzYWJiOTg4Mjg1ZDI2NTljMDU3YzllODhiY2Q1ODEyZmI2ZjZkMDQzZWJkZTY5ZTU4ODVmMzAyZjk2MDA0MzBlN2U2ZjVlM2MzNjk2MmY2MDViMDZhNSIsImhhc2hfbWV0YSI6IjE4YjcwMzdlYWU1ZTdhYTkzOWJiYWE4OGM4MDQ3YTI2ODI3YzdjMmVlMzRhYzZhN2MxMDAxZjhlZDY1YTY3MjQiLCJzZXFubyI6MjA2NDg4N30sInNlcnZpY2UiOnsiaG9zdG5hbWUiOiJ3d3cud2Fzdi5tZSIsInByb3RvY29sIjoiaHR0cHM6In0sInR5cGUiOiJ3ZWJfc2VydmljZV9iaW5kaW5nIiwidmVyc2lvbiI6MX0sImNsaWVudCI6eyJuYW1lIjoia2V5YmFzZS5pbyBnbyBjbGllbnQiLCJ2ZXJzaW9uIjoiMS4wLjQxIn0sImN0aW1lIjoxNTE4MzI4ODg2LCJleHBpcmVfaW4iOjUwNDU3NjAwMCwicHJldiI6IjAzNTRjMTQ5ZDM3OWMzMmRhYzcxMTVhOGYzYThmMGFlMDI2MWJhNWVhZWRlYWRjOWFjYTQ3YzMzNzE3ODFiZTIiLCJzZXFubyI6NjEsInRhZyI6InNpZ25hdHVyZSJ9o3NpZ8RAAUlw+UVhNu+e2+CLh/faNGhv6nvbeWCPlzVSuoEZjOgYNFP+c3Qo1oQRNuHeVOqX8iIvSmlAbYqhOZn/vJV/DqhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEII2dswH+XrGtpWBslG/xTUYtO+iB2ZOZZjnyPXnlGsB7o3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/wasv
+
+==================================================================

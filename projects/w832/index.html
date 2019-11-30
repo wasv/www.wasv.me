@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>[WASV] | w832</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../../css/reset.css">
+    <link rel="stylesheet" href="../../css/style.css">
+  </head>
+  <body>
+    <div id="sidebar">
+      <img id="profile" src="../../img/wasv.jpg" />
+      <div id="name" class="center">William A Stevens V</div>
+      <div id="uname" class="center">(wasv)</div>
+      <ul id="what-i-do" class="center">
+        <li> I build things for fun. </li>
+        <li> I ask questions to learn. </li>
+        <li> I solve problems to live. </li>
+      </ul>
+      <div id="social">
+        <a target="_blank" title="E-Mail" href="mailto:contact@wastevensv.com"><i class="fa fa-envelope-square fa-2x" aria-hidden="true"></i></a>
+        <a target="_blank" title="GitHub" href="https://github.com/wasv"><i class="fa fa-github-square fa-2x" aria-hidden="true"></i></a>
+        <a target="_blank" title="GitLab" href="https://gitlab.com/wasv"><i class="fa fa-gitlab fa-2x" aria-hidden="true"></i></a>
+        <a target="_blank" title="LinkedIn" href="https://www.linkedin.com/in/wastevensv"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a>
+      </div>
+    </div>
+    <div id="header">
+      <span id="nav">
+        <span class="line">
+          <a href="../../index.html">Projects</a>
+        </span>
+        <span class="line">
+          <a href="../../links.html">Reading List</a>
+          <a href="../../resume.pdf" target="_blank">Resume</a>
+        </span>
+      </span>
+    </div>
+    <div id="content">
+        <h1>w832</h1>
+<p>Learning how emulators and assemblers work with a fictional architecture.</p>
+<p><img alt="Sreenshot of code for w832" class="primary" src="w832_code.png" style="width:80%;display:block;" /></p>
+<p><i class="fa fa-gitlab"></i> Code: <a target="_blank" href="https://gitlab.com/wasv/w832">wasv/w832</a></p>
+<p>I spent some time this past summer and spring working on learning the basics of designing an instruction set.
+I didn't formally learn these topics for a year or two in my college.
+However, I found myself with enough time to design an emulator and assembler for a fictional
+instruction set that I designed based on the architecture of the
+<a href="https://en.wikipedia.org/wiki/Manchester_Small-Scale_Experimental_Machine" target="_blank">Manchester SSEM</a>
+The instruction set is named W832, short for "WASV's 8-bit, 32-address Instruction Set".</p>
+<p>The process of deciding on an architecture was essentially a really long <a href="https://www.xkcd.com/214" target="_blank">Wikipeida Rabbit Hole</a>
+ranging from <a href="https://en.wikipedia.org/wiki/Orthogonal_instruction_set" target="_blank">orthogonality</a>
+to <a href="https://en.wikipedia.org/wiki/One_instruction_set_computer" target="_blank">one instruction set architectures</a>.
+The one instruction architectures were very useful to look at as an example of the bare minimum needed for a useful instruction set.
+Eventually I got my instruction set down to 8 instructions, leaving 5 bits to address 32 bytes of memory.
+I might also make a W816 instruction set with support for immediate operands, however this would reduce the address bits to 4, leaving only 16 bytes to address memory.</p>
+<p>I also have a JavaScript emulator for a different architecture, <a href="https://gitlab.com/wasv/c1616-js" target="_blank">C1616</a>.
+C1616 is an extension of Daniel Bailey's <a href="https://github.com/danieljabailey/C88" target="_blank">C88</a>, which was also based on the SSEM.
+I've found that either W832 or C88 can be useful in learning the basics programming in an assembly language, without the need to have dedicated hardware.</p>
+    </div>
+  </body>
+</html>
+<!-- 
+    But if I were to say, my fellow citizens, that we shall send to
+    the moon, 240,000 miles away from the control station in Houston,
+    a giant rocket more than 300 feet tall, the length of this
+    football field, made of new metal alloys, some of which have not
+    yet been invented, capable of standing heat and stresses several
+    times more than have ever been experienced, fitted together with a
+    precision better than the finest watch, carrying all the equipment
+    needed for propulsion, guidance, control, communications, food and
+    survival, on an untried mission, to an unknown celestial body, and
+    then return it safely to earth, re-entering the atmosphere at
+    speeds of over 25,000 miles per hour, causing heat about half that
+    of the temperature of the sun - almost as hot as it is here today
+    - and do all this, and do it right, and do it first before this
+    decade is out - then we must be bold.
+-->
