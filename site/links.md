@@ -8,7 +8,6 @@ template: template.html
 <h2>My Other Sites</h2>
 <ul>
   <li><a target="_blank" href="http://okay.wasv.me/">okay.wasv.me</a> A site I made to help with stress relief.</li>
-  <li><a target="_blank" href="http://good.wasv.me/">good.wasv.me</a> A site my friend and I made to help show positive emotions.</li>
 </ul>
 <h2>Useful Resources</h2>
 <h3>z80</h3>
@@ -27,6 +26,6 @@ template: template.html
 <ul>
   <li><a target="_blank" href="http://docs.gl/">docs.gl</a> Useful reference for OpenGL functions and compatibility.</li>
   <li><a target="_blank" href="http://www.opengl-tutorial.org/">opengl-tutorial.org</a> Tutorial 7 on model loading is particularly useful. I use <a href="https://github.com/wastevensv/glGraph/blob/master/glhelper.hpp#L26">a modified version</a> of the code in most of my OpenGL projects.</li>
-  <li><a target="_blank" href="https://open.gl/">open.gl</a> The first OpenGL tutorial I used. Went from a basic toolchain to an <a href="https://github.com/wastevensv/CSH-Spring16-Hackathon/blob/master/combine-test.cpp">animated textured quad</a> over the course of a 24 hour hackathon.</li>
+  <li><a target="_blank" href="https://open.gl/">open.gl</a> The first OpenGL tutorial I used. Went from a basic toolchain to an <a href="https://github.com/wasv/CSH-Spring16-Hackathon/blob/master/combine-test.cpp">animated textured quad</a> over the course of a 24 hour hackathon.</li>
   <li><a target="_blank" href="https://learnopengl.com/">learnopengl.com</a> A more advanced OpenGL tutorial.</li>
 </ul>

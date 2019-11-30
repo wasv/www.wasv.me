@@ -16,7 +16,7 @@ CSH is a collection of students interested in creating projects and learning new
 * Intended to be a proof of concept for a virtual environment for tabletop games.
 
 ## Source Code:
-<a target="_blank" href="https://github.com/wastevensv/ARDnD"><i class="fa fa-github"></i>wastevensv/ARDnD</a><br/>
+<a target="_blank" href="https://github.com/wasv/ARDnD"><i class="fa fa-github"></i>wasv/ARDnD</a><br/>
 
 # Network Intercom System
 ![Intercom](csh_intercom.png){style="width:100%;display:block;"}
@@ -24,7 +24,7 @@ CSH is a collection of students interested in creating projects and learning new
 * Allows members to broadcast messages to any speaker system in the house.
 * Created in collaboration with [Trevor Sherrard](http://trevorsherrard.com/){target="_blank"}.
 # Source Code:
-<a target="_blank" href="https://github.com/wastevensv/intercom"><i class="fa fa-github"></i>wastevensv/intercom</a><br/>
+<a target="_blank" href="https://github.com/wasv/intercom"><i class="fa fa-github"></i>wasv/intercom</a><br/>
 
 # Project Management System
 ![Project Management System](csh_pms.png){style="width:100%;display:block;"}
@@ -32,4 +32,4 @@ CSH is a collection of students interested in creating projects and learning new
 * Custom project management system written in Django.
 * Used by members of the RIT Computer Science House to record and document projects.
 ## Source Code:
-<a target="_blank" href="https://github.com/wastevensv/CSH_Projects"><i class="fa fa-github"></i>wastevensv/CSH_Projects</a><br/>
+<a target="_blank" href="https://github.com/wasv/CSH_Projects"><i class="fa fa-github"></i>wasv/CSH_Projects</a><br/>

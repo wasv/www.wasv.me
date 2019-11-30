@@ -22,7 +22,7 @@ I've seen a lot of tutorials online about how to make a phone sized reflective p
 
 * Demos potential for interactive game-play on reflective prism.
 * Both players must cooperate to aim from different perspectives.
-* <a target="_blank" href="https://github.com/wastevensv/HoloUpShooter"><i class="fa fa-github"></i>wastevensv/HoloUpShooter</a>
+* <a target="_blank" href="https://github.com/wasv/HoloUpShooter"><i class="fa fa-github"></i>wasv/HoloUpShooter</a>
 
 ## Holographic Graphing
 ![Holo Graphing](holo_graphing.png){style="width:100%;display:block;"}
@@ -37,4 +37,4 @@ I've seen a lot of tutorials online about how to make a phone sized reflective p
 * Uses multiple glViewports to render the object onto the same screen from different perspectives.
 * Normalizes the size of an object to properly fit on the screen.
 * Adjustable distance and rotation.
-* <a target="_blank" href="https://github.com/wastevensv/Holo"><i class="fa fa-github"></i>wastevensv/Holo</a>
+* <a target="_blank" href="https://github.com/wasv/Holo"><i class="fa fa-github"></i>wasv/Holo</a>
