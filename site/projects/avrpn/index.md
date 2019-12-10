@@ -9,7 +9,7 @@ An AVR [RPN](https://en.wikipedia.org/wiki/Reverse_Polish_notation){target="\_ba
 
 ![My Updated Prototype](prototype-2.png){class="primary" style="width:80%;display:block;"}
 
-<i class="fa fa-gitlab"></i> Code: <a target="_blank" href="https://gitlab.com/wasv/avr-rpn-calc">wasv/avr-rpn-calc</a>
+<i class="fa fa-github"></i> Code: <a target="_blank" href="https://github.com/wasv/avrpn-calc">wasv/avrpn-calc</a>
 
 ## Updates:
 ### November 2018
@@ -28,11 +28,11 @@ No functional updates this time, just some more documentation as I prepare to re
 
 I've worked out the remaining bugs in keypad reading code. It turns out that the prebuilt keypad I was using was causing an issue. After I rebuilt the keypad circuit with 16 individual buttons, each with a pullup resistor, I was able to work out the remaining software bugs. I went through a few different iterations, gradually adding more debugging code. One iteration involved reading each register on the IO expander hoping to figure out what the state of the device was. It was only after I simplified the code, essentially starting over, that I could figure out how to read the state properly.
 
-The current code displays the hex value read from IO expander and the keycode it matches. I'm still working on a way to get interrupts to work, but I should be able to get my final code to work without them. The code in the [keys folder](https://gitlab.com/wasv/avr-rpn-calc/tree/master/keys){target="_blank"}.
+The current code displays the hex value read from IO expander and the keycode it matches. I'm still working on a way to get interrupts to work, but I should be able to get my final code to work without them. The code in the [keys folder](https://github.com/wasv/avrpn-calc/tree/master/keys){target="_blank"}.
 
 ### January 14th, 2016
 
-The parts came in for the new keypad design. I assembled a circuit with the IO expander and LCD connected to the Arduino through the same i2c bus. Communication appears to be working, but the IO expander isn't picking up any button presses. I spent most of last night and this morning troubleshooting it. See the [dev branch](https://gitlab.com/wasv/avr-rpn-calc/tree/dev){target="_blank"} on GitHub (now GitLab) for my current work. The keys folder will currently show the received state of the IO expander GPIO. I may need to work on how I wired the buttons.
+The parts came in for the new keypad design. I assembled a circuit with the IO expander and LCD connected to the Arduino through the same i2c bus. Communication appears to be working, but the IO expander isn't picking up any button presses. I spent most of last night and this morning troubleshooting it. See the [dev branch](https://github.com/wasv/avrpn-calc/tree/dev){target="_blank"} on GitHub (now GitLab) for my current work. The keys folder will currently show the received state of the IO expander GPIO. I may need to work on how I wired the buttons.
 
 ### January 12th, 2016
 
@@ -42,7 +42,7 @@ I'm also waiting on parts for a redesigned keypad. The new design will use an i2
 
 ### January 10th, 2016
 
-So far, I have a few tests in the [project repository](https://gitlab.com/wasv/avr-rpn-calc/){target="_blank"} to verify that the LCD can display characters, and that the keypad can detect keypresses.
+So far, I have a few tests in the [project repository](https://github.com/wasv/avrpn-calc/){target="_blank"} to verify that the LCD can display characters, and that the keypad can detect keypresses.
 
 The LCD works, and the keypad can detect if a key is pressed. However, I have run into some trouble with scanning the keys. The keypad will occasionally send the wrong keypress to screen (typically one directly above or below the correct key). I believe using some debouncing could solve the problem, or possibly changing the scanning function to only detect a change in keypress.
 
@@ -62,7 +62,7 @@ For my project I worked on an AVR based calculator. My project was a bit overly 
 
 ![My initial design of the project](notes.png){class="primary" style="width:80%;display:block;"}
 
-The calculator runs on an ATmega328 in an Arduino board. However, the software is written using avr-gcc, without the Arduino IDE. I found a handy way to program the Arduino without the IDE. After some research I modified the Makefile provided in the book ~Make: AVR Programming~ to load code onto the Arduino from the command line (see the [Makefile](https://gitlab.com/wasv/avr-rpn-calc/blob/master/Makefile){target="_blank"})
+The calculator runs on an ATmega328 in an Arduino board. However, the software is written using avr-gcc, without the Arduino IDE. I found a handy way to program the Arduino without the IDE. After some research I modified the Makefile provided in the book ~Make: AVR Programming~ to load code onto the Arduino from the command line (see the [Makefile](https://github.com/wasv/avrpn-calc/blob/master/Makefile){target="_blank"})
 
 The interpreter for the calculator is still a work in progress. I plan to get the basic system finalized before designing a language. The design is based on Reverse Polish Notation (a concept I have worked with in a previous project). In addition to simply displaying a result, the design includes a plan for variables that can be set, added to, and retrieved.
 

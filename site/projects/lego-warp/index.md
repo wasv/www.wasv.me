@@ -9,7 +9,7 @@ Detecting and cropping LEGO backplanes using OpenCV.
 
 ![Picture of LEGO baseplate before and after processing.](lego-warp_demo.png){class="primary" style="width:80%;display:block;"}
 
-<i class="fa fa-gitlab"></i> Code: <a target="_blank" href="https://gitlab.com/wasv/lego-warp">wasv/lego-warp</a>
+<i class="fa fa-github"></i> Code: <a target="_blank" href="https://github.com/wasv/lego-warp">wasv/lego-warp</a>
 
 I've always loved playing with LEGOs. Some of my earliest memories involve building imaginary robots out of LEGOs on a big red table. Eventually I started building working robots with a LEGO Mindstorm NXT kit that my parents got me. And now I'm at RIT for computer engineering looking for ways to build real robots. Even though I'm at college, I'm still in the 4-99 year old range that is perfect for playing with LEGOs. Although now I've found more organized uses for LEGOs.
 
