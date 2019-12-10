@@ -26,7 +26,7 @@ class Page:
             self.content = text
             self.fpath = fpath
         else:
-            self.data = yaml.load(parts[0])
+            self.data = yaml.load(parts[0], Loader=yaml.FullLoader)
             self.content = "\n\n---\n\n".join(parts[1:])
             fpath = pathlib.Path(fpath)
             self.fpath = str(fpath.parent / fpath.stem) + '.html'
@@ -74,7 +74,7 @@ class Collection:
             elif entry.is_file():
                 if entry.name == 'metadata.yml':
                     with open(entry.as_posix(), 'r') as meta_file:
-                        self.data = yaml.load(meta_file.read())
+                        self.data = yaml.load(meta_file.read(), Loader=yaml.FullLoader)
                 else:
                     contents[str(entry.name)] = Page(entry)
 
