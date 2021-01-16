@@ -17,3 +17,4 @@ template: template.html
     </p>
 </div>
 {% endfor %}
+</div>
