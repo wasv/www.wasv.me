@@ -50,14 +50,12 @@ body {
     margin: 0;
 }
 #social {
-    text-align: justify;
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
+    text-align: center;
 }
 #social a {
+    width: 45%;
+    margin: 0 auto;
     display: inline-block;
-    *display: inline;
 }
 #social:after {
     content: '';
@@ -94,15 +92,14 @@ li {
     #name {
         font-size: 1.5em;
     }
-    #social {
-        text-align: justify;
-        width: 40%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
     #profile {
         width: 30%;
+    }
+
+    #social {
+        max-width: 600px;
+        width: 50%;
+        margin: auto;
     }
 
     #nav a {
