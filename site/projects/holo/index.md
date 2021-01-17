@@ -1,8 +1,7 @@
 title: Holo
 description:
-        Projecting a 'hologram' using a computer monitor and
-        a reflective prism made of lexan sheets, including software
-        to render an object on the prism.
+        Projecting a 'hologram' using a computer monitor including software to
+        render an object on the prism.
 template: template.html
 
 ---
@@ -10,10 +9,16 @@ template: template.html
 # 'Holographic' Projection
 ![Hologram](holo_projection.jpg){class="primary" style="max-width:200pt;display:block;"}
 
-I've seen a lot of tutorials online about how to make a phone sized reflective prism for projecting 'holograms' (not technically a [hologram](http://www.merriam-webster.com/dictionary/hologram){target="_blank"}, but creates the illusion of one). However, they were too small to be very interesting, and I couldn't find any software to render a object properly. As a result, I created a 4-sided reflective prism from 8"x10" Lexan sheets, and wrote software to render an object in the proper perspectives.
+I've seen a lot of tutorials online about how to make a phone sized reflective
+prism for projecting 'holograms' (not technically a
+[hologram](http://www.merriam-webster.com/dictionary/hologram){target="_blank"},
+but creates the illusion of one). However, they were too small to be very
+interesting, and I couldn't find any software to render a object properly. As a
+result, I created a 4-sided reflective prism from 8"x10" Lexan sheets, and wrote
+software to render an object in the proper perspectives.
 
 # Links
-<a target="_blank" href="prism-calc.html"><i class="fa fa-link"></i>Reflective Prism Calculator</a><br/>
+<a href="prism-calc.html"><i class="fa fa-link"></i>Reflective Prism Calculator</a><br/>
 <a target="_blank" href="https://hackaday.io/project/14367-holographic-projection"><i class="fa fa-link"></i>Hackaday.io Project</a><br/>
 
 # Software

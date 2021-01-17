@@ -1,35 +1,13 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Reflective Prism Calculator | [ WASV ]</title>
-  <meta name="description" content="Projecting a 'hologram' using a computer monitor and a reflective prism made of lexan sheets, including software to render an object on the prism.">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="../../css/reset.css" media="screen" title="no title" charset="utf-8">
-  <link rel="stylesheet" href="style.css" media="screen" title="no title" charset="utf-8">
-  <link rel="icon" type="image/png" href="/favicon.ico">
-</head>
-<body>
-<div id="container">
-  <div id="header">
-    <div id="header-info">
-      <h1 id="title">William A Stevens V</h1>
-      <h2 id="tagline">Maker, Coder, Dreamer</h2>
-      <ul id="morals">
-        <li> I make things because I enjoy learning. </li>
-        <li> I ask questions because I am curious. </li>
-        <li> I solve problems because I am human. </li>
-      </ul>
-    </div>
-  </div>
-  
-<div class="card">
+title: Holo Prism Calc
+template: template.html
+
+---
+
+<div>
   <h1>Reflective Prism Template Generator</h1>
   <p>This calculator generates a template for cutting a 2 sides of a reflective prism from a sheet of material with minimal waste and maximum size.<p>
 </div>
-<div class="card">
+<div>
   Sheet Height: <input id="sheight" type="number" name="sheight" min="1" max="600" value="100" onchange="redraw()"/> <br>
   Sheet Width: <input id="swidth" type="number" name="swidth" min="1" max="900" value="100" onchange="redraw()"/> <br>
   <br>
@@ -90,7 +68,3 @@
   }
   redraw();
 </script>
-
-</div>
-</body>
-</html>
